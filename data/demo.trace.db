@@ -1,0 +1,14 @@
+2020-10-23 10:07:25 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO PERSONS (NAME, EMAIL, PHONE) VALUES
+  ('Alice', 'alice@gmail.com', '0412123456'),
+  ('Bill', 'bill@hotmail.com', '0412847222'),
+  ('Carol', 'carol@gmail.com', '0412384229'),
+  ('Nigel', 'shiuu@gmail.com', '0412788051'),[*]"; expected "ROW, (, DEFAULT, NOT, EXISTS, INTERSECTS, UNIQUE"; SQL statement:
+INSERT INTO persons (name, email, phone) VALUES
+  ('Alice', 'alice@gmail.com', '0412123456'),
+  ('Bill', 'bill@hotmail.com', '0412847222'),
+  ('Carol', 'carol@gmail.com', '0412384229'),
+  ('Nigel', 'shiuu@gmail.com', '0412788051'), [42001-200]
+2020-10-23 10:08:31 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "PERSONS[*]"; expected "PREPARE"; SQL statement:
+PERSONS [42001-200]
