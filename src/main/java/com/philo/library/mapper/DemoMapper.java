@@ -15,7 +15,8 @@ public interface DemoMapper {
     @Select("select * from persons")
     List<Person> getPeople();
 
-    @Select("select * from books " +
-            "where status=#{personID}")
+    @Select("SELECT books.* FROM books " +
+            "INNER JOIN loans ON books.id = loans.bookid " +
+            "WHERE loans.personid=#{personID}")
     List<Book> getBooksByPersonID(@Param("personID") int personID);
 }
